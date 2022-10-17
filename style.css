@@ -60,6 +60,7 @@ form div {
 }
 
 #message {
+    background-color: #1f1fff;
     display: none;
     color: white;
     padding: 5px 10px;
