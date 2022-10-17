@@ -29,7 +29,6 @@ function digito(n1, n2, n3, n4) {
     const y = x % 11;
 
     return y < 2 ? 0 : 11 - y;
-
 }
 
 function aleatorio() {
@@ -41,16 +40,14 @@ function aleatorio() {
 buttonGerar.addEventListener("click", () => {
     cpf.value = gerarCpf();
 
-    document.querySelector("#message").style.background = "#1f1fff";
     document.querySelector("#message").innerHTML = "Copiar";
     document.querySelector("#copy").removeAttribute("disabled", "disabled");
 })
 
 buttonCopy.addEventListener("click", () => {
     cpf.select();
-    document.execCommand("copy")
 
-    
+    document.execCommand("copy");
     document.querySelector("#message").innerHTML = "Copiado";
 })
 
