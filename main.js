@@ -65,6 +65,8 @@ function offMessage() {
     document.querySelector("#message").style.display = "none";
 }
 
+
+
 function testaCpf(valor) {
     let Soma;
     let Resto;
@@ -77,8 +79,9 @@ function testaCpf(valor) {
 
     if ((Resto == 10) || (Resto == 11))  Resto = 0;
     if (Resto != parseInt(valor.substring(9, 10)) )
-     
-    return document.querySelector("#exibir-cpf").style.border = "3px solid red", document.querySelector("#false").removeAttribute("hidden", "hidden"), document.querySelector("#true").setAttribute("hidden", "hidden")
+
+    return document.querySelector("#exibir-cpf").style.border = "3px solid red", document.querySelector("#false").removeAttribute("hidden", "hidden"),
+    document.querySelector("#true").setAttribute("hidden", "hidden") 
 
     Soma = 0;
     for (i = 1; i <= 10; i++) Soma = Soma + parseInt(valor.substring(i-1, i)) * (12 - i);
@@ -87,8 +90,11 @@ function testaCpf(valor) {
     if ((Resto == 10) || (Resto == 11))  Resto = 0;
     if (Resto != parseInt(valor.substring(10, 11) ) ) 
 
-    return document.querySelector("#exibir-cpf").style.border = "3px solid red", document.querySelector("#false").removeAttribute("hidden", "hidden"), document.querySelector("#true").setAttribute("hidden", "hidden")
-    return document.querySelector("#exibir-cpf").style.border = "3px solid #1b8f1b", document.querySelector("#true").removeAttribute("hidden", "hidden"), document.querySelector("#false").setAttribute("hidden", "hidden")
+    return document.querySelector("#exibir-cpf").style.border = "3px solid red", document.querySelector("#false").removeAttribute("hidden", "hidden"),
+    document.querySelector("#true").setAttribute("hidden", "hidden")
+    
+    return document.querySelector("#exibir-cpf").style.border = "3px solid #1b8f1b", document.querySelector("#true").removeAttribute("hidden", "hidden"),
+    document.querySelector("#false").setAttribute("hidden", "hidden") 
 }
 
 buttonValidar.addEventListener("click", () => {
