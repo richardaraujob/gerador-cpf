@@ -10,8 +10,14 @@
 <body>
     <h1>Gerador de CPF</h1>
     <form>
-        <div>
-            <input type="text" id="cpf">
+        <div id="exibir-cpf">
+            <input type="text" id="cpf" readonly>
+            <span id="true" hidden>
+                <img src="image/true.png"/>
+            </span>
+            <span id="false" hidden>
+                <img src="image/false.png">
+            </span>
             <button type="button" id="copy" onmouseover="message()" onmouseout="offMessage()" disabled>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                     <path fill="none" d="M0 0h24v24H0z"/>
@@ -19,10 +25,9 @@
                 </svg>
             </button>
         </div>
-        <span id="message">Copiar</span>
-        
-
+        <span id="message"></span>
         <button type="button" id="gerar">Gerar</button>
+        <button type="button" id="validar">Validar</button>
     </form>
 </body>
 <script src="https://richardaraujob.github.io/gerador-cpf/main.js"></script>
