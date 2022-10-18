@@ -44,6 +44,7 @@ buttonGerar.addEventListener("click", () => {
     document.querySelector("#message").innerHTML = "Copiar";
     document.querySelector("#copy").removeAttribute("disabled", "disabled");
     document.querySelector("#exibir-cpf").style.border = "none";
+    document.querySelector("#cpf").setAttribute("readonly", "readonly");
     document.querySelector("#true").setAttribute("hidden", "hidden")
     document.querySelector("#false").setAttribute("hidden", "hidden")
 })
